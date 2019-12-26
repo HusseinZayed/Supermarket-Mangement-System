@@ -1,0 +1,10 @@
+*****************************  فاتوره******************************
+Name Of Product : oil
+Price Of Product : 20.0
+Discount Of Product : 3%
+--------------------------------------
+Name Of Product : apple
+Price Of Product : 23.0
+Discount Of Product : 5%
+--------------------------------------
+

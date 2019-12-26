@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="superMarket.viewControl.Login">
+    <children>
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #393351;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="89.0" layoutY="263.0" prefHeight="23.0" prefWidth="205.0" text="Name Company FC" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="87.0" layoutY="295.0" prefHeight="23.0" prefWidth="215.0" text="Create manage your life easily" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="123.0" fitWidth="126.0" layoutX="126.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="488.0" layoutY="100.0" AnchorPane.bottomAnchor="73.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <TextField fx:id="txtUserName" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="username or email" />
+                <Label fx:id="btnForgot" alignment="CENTER" layoutX="8.0" layoutY="131.0" prefHeight="23.0" prefWidth="104.0" text="Forgot Password" textFill="#5383ff">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnFB" layoutX="4.0" layoutY="215.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #0C39FF;" text="Sign in with Facebook" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Separator layoutX="8.0" layoutY="190.0" prefHeight="7.0" prefWidth="275.0" />
+                <Label alignment="CENTER" layoutX="126.0" layoutY="179.0" prefHeight="23.0" prefWidth="31.0" style="-fx-background-color: #fff;" text="Or" textFill="#5b5a5a">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Separator layoutY="270.0" prefHeight="7.0" prefWidth="275.0" />
+                <Label alignment="CENTER" layoutX="122.0" layoutY="262.0" prefHeight="23.0" prefWidth="31.0" style="-fx-background-color: #fff;" text="Or" textFill="#5b5a5a">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblError" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Label>
+            <Button fx:id="signin" focusTraversable="false" layoutX="166.0" layoutY="124.0" mnemonicParsing="false" onAction="#isSign" onDragEntered="#isSign" prefHeight="34.0" prefWidth="114.0" text="Sign in">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnFB2" focusTraversable="false" layoutX="5.0" layoutY="291.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" text="Sign up">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="47.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/facebook.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="password" layoutX="6.0" layoutY="55.0" onAction="#isSign" prefHeight="34.0" prefWidth="275.0" promptText="password" />
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="394.0" layoutY="466.0" prefHeight="23.0" prefWidth="137.0" text="Design by hussein12" textFill="#5b5a5a" AnchorPane.bottomAnchor="14.0">
+            <font>
+                <Font name="Segoe UI" size="12.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="65.0" fitWidth="55.0" layoutX="385.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblServer" alignment="CENTER" layoutX="486.0" layoutY="22.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
